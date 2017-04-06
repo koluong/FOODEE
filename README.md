@@ -6,8 +6,20 @@ This Web App was created to practice and develop my Angular experience. Also it'
 3. System Analysis
 4. Technologies
 5. Unbelievable Yet Plausible Food Facts
-6. About Me
+6. Closing
 
-## Angular CLI Development Server
+## Set-up Environment
+
+### Angular CLI Development Server
 
 Used Angular CLI to run on a local development server. Navigate to `http://xx.xx.xxx.xxx:4200`.
+
+## Features
+
+## System Analysis
+
+## Technologies
+
+## Unbelievable Yet Plausible Food Facts
+
+## Closing
