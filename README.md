@@ -1,7 +1,7 @@
 # Foodee
 
 This Web App was created to practice and develop my Angular experience. Also it's about food. I like food.
-1. [Set-up Environment](#Set-up-Environment)
+1. [Set-up Environment](#set-up-environment)
 2. Features
 3. System Analysis
 4. Technologies
