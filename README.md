@@ -4,7 +4,7 @@ This Web App was created to practice and develop my Angular experience. Also it'
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Used Angular CLI to run on a local development server. Navigate to `http://xx.xx.xxx.xxx:4200`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
