@@ -4,6 +4,6 @@ export class Ingredient {
 
   constructor(name: string, amount: number) {
     this.name = name;
-    this.amount = amount;
+    this.amount = amount || 1;
   }
 }
