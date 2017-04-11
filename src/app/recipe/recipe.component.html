@@ -7,11 +7,13 @@
       </app-recipe-list>
     </div>
     <div class="col-md-7">
-      <h2 *ngIf = "!showing">Click on a recipe to show details!</h2>
       <app-recipe-detail
-      *ngIf="showing"
+      *ngIf="viewingRecipe; else infoText"
       [recipe]="viewingRecipe">
       </app-recipe-detail>
+      <ng-template #infoText>
+        <h1>Please select a Recipe!</h1>
+      </ng-template>
     </div>
   </div>
 </div>

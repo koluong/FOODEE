@@ -8,11 +8,12 @@ import { Recipe } from '../recipe.model';
 })
 export class RecipeListComponent implements OnInit {
 
-  @Output() selectedRecipe = new EventEmitter<{name: string, description: string, imagePath: string}>();
+  @Output() selectedRecipe = new EventEmitter<Recipe>();
 
   recipes:Recipe[] = [
-    new Recipe('Chicken Stew', 'Chicken drumsticks stewed with tomatoes and sumac.', 'http://www.seriouseats.com/images/2015/09/20150914-pressure-cooker-recipes-roundup-09.jpg'),
-    new Recipe('Curly Fries', 'Yukon gold potatoes deep fried with cajun spices.', 'https://eat24-files-live.s3.amazonaws.com/cuisines/v4/fast-food.jpg?Signature=zjXItllcwKm%2Bu7WzbHJftDdnvSc%3D&Expires=1491864879&AWSAccessKeyId=AKIAIEJ2GCCJRT63TBYA')
+    new Recipe('Chicken Stew', 'Chicken  stewed with tomatoes and sumac.', 'http://www.seriouseats.com/images/2015/09/20150914-pressure-cooker-recipes-roundup-09.jpg'),
+    new Recipe('Curly Fries', 'Yukon gold potatoes deep fried with cajun spices.', 'https://idahopotato.com/uploads/media/recipes/southwest-tuna-casserole-with-curly-idaho-fries.jpg'),
+    new Recipe('Flat Iron Steak', 'Top sirloin steak grilled to medium-rare doneness.', 'http://www.omahasteaks.com/gifs/990x594/fi004.jpg')
 
   ];
 
@@ -21,7 +22,7 @@ export class RecipeListComponent implements OnInit {
   ngOnInit() {
   }
 
-  selectRecipe(recipe: {name: string, description: string, imagePath: string}) {
+  selectRecipe(recipe: Recipe) {
     this.selectedRecipe.emit(recipe);
 
   }

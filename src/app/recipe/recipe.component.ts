@@ -1,4 +1,5 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { Recipe } from "./recipe.model"
 
 @Component({
   selector: 'app-recipe',
@@ -7,8 +8,7 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 })
 export class RecipeComponent implements OnInit {
 
-  showing = false;
-  viewingRecipe= {name: "", description: "", imagePath: ""};
+  viewingRecipe: Recipe;
 
   constructor() { }
 
@@ -16,7 +16,6 @@ export class RecipeComponent implements OnInit {
   }
 
   viewRecipe(data) {
-    this.showing = true;
     this.viewingRecipe = data;
 
   }
